@@ -12,7 +12,7 @@ public class Demo {
 
 
         try {
-        	String message = "This string contains a secret message.";
+        	String message = "This string contains a secret msg.";
         	KeyGenerator keygen = KeyGenerator.getInstance("DES");
             keygen.init(56);  // To use 256 bit keys, you need the "unlimited strength" encryption policy files from Sun.
             byte[] key = keygen.generateKey().getEncoded();
